@@ -7,7 +7,8 @@ LoadModule include_module libexec/mod_include.so
 In directory:
 Options Includes Indexes FollowSymLinks
 
-<IfModule mime_module>
-    AddType text/html .shtml
-    AddOutputFilter INCLUDES .shtml
-</IfModule>
+In IfModule mime_module:
+
+AddType text/html .shtml
+
+AddOutputFilter INCLUDES .shtml
